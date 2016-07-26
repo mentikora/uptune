@@ -1,0 +1,103 @@
+/* top slider */
+.mainpage_slider img{
+	max-height: 700px;
+	width: 100%;
+}
+
+/* brands slider */
+.brands_slider_wrapper{
+	margin-top: 30px;
+	margin-bottom: 80px;
+}
+
+._types{
+
+}
+	._types ._types-item{}
+	._types ._types_brand{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		height: 250px;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 28px;
+
+		border: 1px solid #009ad3;
+		text-decoration: none;
+
+		cursor: pointer;
+	}
+		._types ._types_brand h2{
+			color: #0c0c0c;
+			font-size: 30px;
+			text-transform: uppercase;
+			
+			width: 35%;
+			margin: 0 25px;
+
+			-webkit-transform: scale(1);
+	    transform: scale(1);
+	    -webkit-transform-origin: 0 50%;
+	    transform-origin: 0 50%;
+	    -webkit-transition: .3s ease-in-out;
+	    -moz-transition: .3s ease-in-out;
+	    -ms-transition: .3s ease-in-out;
+	    -o-transition: .3s ease-in-out;
+	    transition: .3s ease-in-out;
+		}
+			._types ._types_brand:hover h2{
+				-webkit-transform: scale(1.15);
+		    transform: scale(1.15);
+			}
+		._types ._types_brand img{
+			-webkit-transform: translateX(0);
+	    transform: translateX(0);
+	    -webkit-transition: .3s ease-in-out;
+	    -moz-transition: .3s ease-in-out;
+	    -ms-transition: .3s ease-in-out;
+	    -o-transition: .3s ease-in-out;
+	    transition: .3s ease-in-out;
+		}
+			._types ._types_brand:hover img{
+				-webkit-transform: translateX(20px);
+				transform: translateX(20px);
+			}
+
+/* mainpage full width banner */
+.mainpage_full{
+	height: 600px;
+	background-position: 0 0;
+	background-attachment: fixed;
+}
+	.mainpage_full .fake{
+		height: 100%;
+		/* !!! */
+		background: url('images/pattern-1-1.png') repeat 0 0;
+		/*background: rgba(0,0,0, .5);*/
+	}
+	.mainpage_full .container{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.mainpage_full.mainpage_about{
+		background-image: url('images/mainpage_about.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.mainpage_producers{
+		background-image: url('images/mainpage_producers.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+	.mainpage_payment{
+		background-image: url('images/mainpage_payment.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+			

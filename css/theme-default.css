@@ -1,4 +1,4 @@
-/* reset meyer */
+/*reset meyer */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -36,7 +36,7 @@ table {
 	border-spacing: 0;
 }
 p{ margin: 0; }
-
+.center{text-align: center;}
 /*
 	1. GRID
 	2. FONTSTYLE
@@ -44,6 +44,7 @@ p{ margin: 0; }
 	4. BUTTONS
 	5. FORMSTYLE
 	6. ANIMATION
+
 */
 
 /* clearfix */
@@ -58,6 +59,13 @@ p{ margin: 0; }
 .clearfix { display: inline-block; }
 * html .clearfix { height: 1%; }
 .clearfix { display: block; }
+
+/*==== COLORS ===*/
+/*
+ #201f1f header bg like
+ #009ad3 blue
+*/
+
 
 /*=== GRID ===*/
 html{ height: 100%; }
@@ -95,6 +103,39 @@ body{
 	flex: 0 0 auto;
 }
 
+
+/*=== BOOTSTRAP  ===*/
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px) {
+	.col-sm-15 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-15 {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-15 {
+    width: 20%;
+    float: left;
+  }
+}
 /*=== FONTSTYLE ===*/
 
 /*=== BREADCRUMBS ===*/
@@ -139,10 +180,10 @@ body{
 }
 @media(min-width: 1200px) and (max-width: 1530px){
 	.container{
-		width: 100% !important;
+		width: 90% !important;
 	}
 }
 
 /*=== FORMSTYLE ===*/
 
-/*=== ANIMATION ===*/
+/*=== ANIMATION ===
