@@ -100,6 +100,48 @@ body{
 /*=== BREADCRUMBS ===*/
 
 /*=== BUTTONS ===*/
+.test_button{
+	background-color: #007bff;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	position: relative;
+	display: inline-block;
+	color: #fff;
+}
+.test_button:before{
+	position: absolute;
+	top: 0;
+	left: -10px;
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 50px 10px;
+	border-color: transparent transparent #007bff transparent;
+}
+.test_button:after{
+	position: absolute;
+	top: 0;
+	left: -10px;
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 50px 10px;
+	border-color: transparent transparent #007bff transparent;
+}
+
+.item{
+	background: red;
+	color: #fff;
+	text-align: center;
+}
+@media(min-width: 1200px) and (max-width: 1530px){
+	.container{
+		width: 100% !important;
+	}
+}
 
 /*=== FORMSTYLE ===*/
 
