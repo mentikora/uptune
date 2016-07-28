@@ -37,15 +37,7 @@ table {
 }
 p{ margin: 0; }
 .center{text-align: center;}
-/*
-	1. GRID
-	2. FONTSTYLE
-	3. BREADCRUMBS
-	4. BUTTONS
-	5. FORMSTYLE
-	6. ANIMATION
 
-*/
 
 /* clearfix */
 .clearfix:after {
@@ -137,41 +129,91 @@ body{
   }
 }
 /*=== FONTSTYLE ===*/
+.h1_style{}
+.h2_style{
+	font-size: 48px;
+	text-transform: uppercase;
+}
+.ck_editor{
+
+}
+
 
 /*=== BREADCRUMBS ===*/
 
 /*=== BUTTONS ===*/
-.test_button{
-	background-color: #007bff;
-	height: 50px;
-	line-height: 50px;
+._button{
 	text-align: center;
 	position: relative;
 	display: inline-block;
-	color: #fff;
+
+	background-color: #007bff;
 }
-.test_button:before{
-	position: absolute;
-	top: 0;
-	left: -10px;
-	content: '';
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 0 50px 10px;
-	border-color: transparent transparent #007bff transparent;
-}
-.test_button:after{
-	position: absolute;
-	top: 0;
-	left: -10px;
-	content: '';
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 0 50px 10px;
-	border-color: transparent transparent #007bff transparent;
-}
+	._button,
+	._button:before,
+	._button:after{
+		-webkit-transition: all .25s ease-in-out;
+		transition: all .25s ease-in-out;
+	}
+	._button:before{
+		content: '';
+		position: absolute;
+		display: block;
+		top: 0;
+		left: -10px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 50px 10px;
+		border-color: transparent transparent #007bff transparent;
+	}
+	._button:after{
+		content: '';
+		position: absolute;
+		display: block;
+		top: 0;
+		right: -10px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 50px 10px 0 0;
+		border-color: #007bff transparent transparent transparent;
+	}
+	._button:hover{
+		text-decoration: none;
+	}
+	/* TYPEOF button */
+	._button.text{
+		height: 50px;
+		line-height: 50px;
+		padding: 0 25px;
+		
+		font-size: 17px;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #0c0c0c;
+	}
+		._button.text:hover{
+			color: #009ad3;
+			background-color: #0c0c0c;
+		}
+		._button.text:hover:before{
+			border-color: transparent transparent #0c0c0c transparent;
+		}
+		._button.text:hover:after{
+			border-color: #0c0c0c transparent transparent transparent;
+		}
+	/* button cart*/
+	._button.cart{
+		height: 45px;
+		line-height: 45px;
+		padding: 0 5px;
+
+		color: #fff;
+	}
+		._button.cart:hover{
+			color: #0c0c0c;
+		}
 
 .item{
 	background: red;
@@ -180,7 +222,8 @@ body{
 }
 @media(min-width: 1200px) and (max-width: 1530px){
 	.container{
-		width: 90% !important;
+		/*width: 90% !important;*/
+		width: 1170px;
 	}
 }
 
