@@ -1,5 +1,5 @@
 #footer{
-	background-color: #000000;
+	background-color: #000000;	
 	color: #fff;
 }
 	/* top */
@@ -35,10 +35,15 @@
 				}
 
 	/* mid */
-	#footer .mid{
-		padding: 48px 0 45px;
-		background: url('images/footer_bg.jpg') no-repeat 0 0;
+	#footer .footer_fake{
+		background: url('images/footer_bg.jpg') no-repeat 50%;
+
+		-webkit-background-size: cover;
+		background-size: cover;
 	}
+		#footer .mid {
+			padding: 45px 0;
+		}
 		#footer .mid h3{
 			border-bottom: 2px solid #009ad3;
 			padding-bottom: 15px;
@@ -96,6 +101,7 @@
 	#footer .bot{
 		height: 47px;
 		line-height: 47px;
+		border-top: 1px solid #4d4d4d;
 	}
 		#footer .bot .pull-left{
 			font-size: 20px;
