@@ -1,0 +1,73 @@
+/*=== BUTTONS ===*/
+._button{
+	text-align: center;
+	position: relative;
+	display: inline-block;
+
+	background-color: #007bff;
+}
+	._button,
+	._button:before,
+	._button:after{
+		-webkit-transition: all .25s ease-in-out;
+		transition: all .25s ease-in-out;
+	}
+	._button:before{
+		content: '';
+		position: absolute;
+		display: block;
+		top: 0;
+		left: -10px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 0 50px 10px;
+		border-color: transparent transparent #007bff transparent;
+	}
+	._button:after{
+		content: '';
+		position: absolute;
+		display: block;
+		top: 0;
+		right: -10px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 50px 10px 0 0;
+		border-color: #007bff transparent transparent transparent;
+	}
+	._button:hover{
+		text-decoration: none;
+	}
+	/* TYPEOF button */
+	._button.text{
+		height: 50px;
+		line-height: 50px;
+		padding: 0 25px;
+		
+		font-size: 17px;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: #0c0c0c;
+	}
+		._button.text:hover{
+			color: #009ad3;
+			background-color: #0c0c0c;
+		}
+		._button.text:hover:before{
+			border-color: transparent transparent #0c0c0c transparent;
+		}
+		._button.text:hover:after{
+			border-color: #0c0c0c transparent transparent transparent;
+		}
+	/* button cart*/
+	._button.cart{
+		height: 45px;
+		line-height: 45px;
+		padding: 0 5px;
+
+		color: #fff;
+	}
+		._button.cart:hover{
+			color: #0c0c0c;
+		}

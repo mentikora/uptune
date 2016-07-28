@@ -1,0 +1,34 @@
+.owl-prev.icon-left-arrow,
+.owl-next.icon-right-arrow{
+	-webkit-transition: all .25s ease-in-out;
+	transition: all .25s ease-in-out;
+}
+
+/* mainpage big slider arrows */
+.mainpage_slider .owl-nav{ margin-top: -40px; }
+.mainpage_slider .icon-left-arrow,
+.mainpage_slider .icon-right-arrow{
+	font-size: 80px;
+	color: #fff;
+}
+	.mainpage_slider .icon-left-arrow:hover,
+	.mainpage_slider .icon-right-arrow:hover{
+		color: #159ad4;
+	}
+	.mainpage_slider .icon-left-arrow{ margin-left: 80px; }
+	.mainpage_slider .icon-right-arrow{ margin-right: 80px; }
+
+/* mainpage slider brands */
+.brands_slider_wrapper .owl-nav{ margin-top: -25px; }
+.brands_slider_wrapper .icon-left-arrow,
+.brands_slider_wrapper .icon-right-arrow{
+	position: relative;
+	font-size: 50px;
+	color: #0c0c0c;
+}
+	.brands_slider_wrapper .icon-left-arrow:hover,
+	.brands_slider_wrapper .icon-right-arrow:hover{
+		color: #159ad4;
+	}
+	.brands_slider_wrapper .icon-left-arrow{ left: -80px; }
+	.brands_slider_wrapper .icon-right-arrow{ right: -80px; }

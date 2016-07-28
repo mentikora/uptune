@@ -1,3 +1,29 @@
 #footer{
-	
+	background-color: #000000;
+	color: #fff;
 }
+	#footer .top{
+		padding: 75px 0;
+		background: #159ad4;
+		color: #0c0c0c;
+		font-size: 34px;
+		text-transform: uppercase;
+	}
+		#footer .top a{
+			color: #fff;
+			font-size: 44px;
+		}
+	#footer .mid{
+		padding: 48px 0 45px;
+		background: url('images/footer_bg.jpg') no-repeat 0 0;
+	}
+	#footer .bot{
+		height: 47px;
+		line-height: 47px;
+	}
+		#footer .bot .pull-left{
+			font-size: 20px;
+		}
+		#footer .bot .pull-right{
+			font-size: 16px;
+		}

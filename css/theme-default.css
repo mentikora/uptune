@@ -95,7 +95,6 @@ body{
 	flex: 0 0 auto;
 }
 
-
 /*=== BOOTSTRAP  ===*/
 .col-xs-15,
 .col-sm-15,
@@ -128,6 +127,7 @@ body{
     float: left;
   }
 }
+
 /*=== FONTSTYLE ===*/
 .h1_style{}
 .h2_style{
@@ -138,88 +138,7 @@ body{
 
 }
 
-
 /*=== BREADCRUMBS ===*/
-
-/*=== BUTTONS ===*/
-._button{
-	text-align: center;
-	position: relative;
-	display: inline-block;
-
-	background-color: #007bff;
-}
-	._button,
-	._button:before,
-	._button:after{
-		-webkit-transition: all .25s ease-in-out;
-		transition: all .25s ease-in-out;
-	}
-	._button:before{
-		content: '';
-		position: absolute;
-		display: block;
-		top: 0;
-		left: -10px;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 0 0 50px 10px;
-		border-color: transparent transparent #007bff transparent;
-	}
-	._button:after{
-		content: '';
-		position: absolute;
-		display: block;
-		top: 0;
-		right: -10px;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 50px 10px 0 0;
-		border-color: #007bff transparent transparent transparent;
-	}
-	._button:hover{
-		text-decoration: none;
-	}
-	/* TYPEOF button */
-	._button.text{
-		height: 50px;
-		line-height: 50px;
-		padding: 0 25px;
-		
-		font-size: 17px;
-		text-transform: uppercase;
-		font-weight: 600;
-		color: #0c0c0c;
-	}
-		._button.text:hover{
-			color: #009ad3;
-			background-color: #0c0c0c;
-		}
-		._button.text:hover:before{
-			border-color: transparent transparent #0c0c0c transparent;
-		}
-		._button.text:hover:after{
-			border-color: #0c0c0c transparent transparent transparent;
-		}
-	/* button cart*/
-	._button.cart{
-		height: 45px;
-		line-height: 45px;
-		padding: 0 5px;
-
-		color: #fff;
-	}
-		._button.cart:hover{
-			color: #0c0c0c;
-		}
-
-.item{
-	background: red;
-	color: #fff;
-	text-align: center;
-}
 @media(min-width: 1200px) and (max-width: 1530px){
 	.container{
 		/*width: 90% !important;*/
@@ -229,4 +148,72 @@ body{
 
 /*=== FORMSTYLE ===*/
 
-/*=== ANIMATION ===
+/*=== ANIMATION === */
+
+/*=== CUSTOM FONT  ===*/
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?qpa291');
+  src:  url('fonts/icomoon.eot?qpa291#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?qpa291') format('truetype'),
+    url('fonts/icomoon.woff?qpa291') format('woff'),
+    url('fonts/icomoon.svg?qpa291#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-welldo:before {
+  content: "\e90c";
+}
+.icon-left-arrow:before {
+  content: "\e900";
+}
+.icon-delete-button:before {
+  content: "\e901";
+}
+.icon-close-envelope:before {
+  content: "\e902";
+}
+.icon-facebook-logo:before {
+  content: "\e903";
+}
+.icon-magnifying-glass:before {
+  content: "\e904";
+}
+.icon-placeholder:before {
+  content: "\e905";
+}
+.icon-shopping-cart-black-shape:before {
+  content: "\e906";
+}
+.icon-skype-logo:before {
+  content: "\e907";
+}
+.icon-telephone-handle-silhouette:before {
+  content: "\e908";
+}
+.icon-vk:before {
+  content: "\e909";
+}
+.icon-youtube-logo:before {
+  content: "\e90b";
+}
+.icon-right-arrow:before {
+  content: "\e90a";
+}
+
