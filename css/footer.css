@@ -2,6 +2,7 @@
 	background-color: #000000;
 	color: #fff;
 }
+	/* top */
 	#footer .top{
 		padding: 75px 0;
 		background: #159ad4;
@@ -10,13 +11,88 @@
 		text-transform: uppercase;
 	}
 		#footer .top a{
+			position: relative;
+
 			color: #fff;
 			font-size: 44px;
+			text-decoration: none;
 		}
+			#footer .top a:after{
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				bottom: 5px;
+				height: 2px;
+				width: 0;
+				background-color: #fff;
+				
+				-webkit-transition: width .3s ease-in-out;
+				transition: width .3s ease-in-out;
+			}
+				#footer .top a:hover:after{
+					width: 100%;
+				}
+
+	/* mid */
 	#footer .mid{
 		padding: 48px 0 45px;
 		background: url('images/footer_bg.jpg') no-repeat 0 0;
 	}
+		#footer .mid h3{
+			border-bottom: 2px solid #009ad3;
+			padding-bottom: 15px;
+			margin-bottom: 25px;
+
+			font-weight: 600;
+			line-height: 30px;
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+			.mid h3 i{
+				display: inline-block;
+				color: #009ad3;
+				font-size: 30px;
+				position: relative;
+				top: 3px;
+				margin-right: 18px;
+			}
+		.mid li{
+			margin-bottom: 25px;
+		}
+		.mid li i {
+			font-size: 20px;
+			position: relative;
+			top: 2px;
+			margin-right: 12px;
+		}
+		.mid li,
+		.mid li a{
+			font-size: 16px;
+			font-weight: 600;
+			color: #fff;
+			
+			-webkit-transition: all .25s ease-in-out;
+			transition: all .25s ease-in-out;
+		}
+		.mid li a:hover{
+			text-decoration: none;
+			color: #159ad4;
+		}
+		.footer_socials{
+			display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	    justify-content: space-around;
+		}
+		.footer_socials a{
+			font-size: 40px;
+			line-height: 40px;
+		}
+	/* bot */
 	#footer .bot{
 		height: 47px;
 		line-height: 47px;
@@ -27,3 +103,12 @@
 		#footer .bot .pull-right{
 			font-size: 16px;
 		}
+
+#footer .welldo{
+	position: relative;
+	top: 6px;
+	margin-left: 20px;
+	
+	line-height: 28px;
+	font-size: 28px;
+}

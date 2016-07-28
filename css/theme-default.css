@@ -138,6 +138,17 @@ body{
 
 }
 
+._icon_link{
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+
+  color: #fff;
+}
+  ._icon_link:hover{
+    color: #159ad4;
+    text-decoration: none;
+  }
+
 /*=== BREADCRUMBS ===*/
 @media(min-width: 1200px) and (max-width: 1530px){
 	.container{
@@ -216,4 +227,3 @@ body{
 .icon-right-arrow:before {
   content: "\e90a";
 }
-
