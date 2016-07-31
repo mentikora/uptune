@@ -9,6 +9,9 @@
 	margin-top: 30px;
 	margin-bottom: 80px;
 }
+	.brands_slider_wrapper a{
+		display: block;
+	}
 
 ._types{
 

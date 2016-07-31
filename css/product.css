@@ -21,8 +21,12 @@
 		-webkit-transition: background .25s ease-in-out;
 		transition: background .25s ease-in-out;
 	}
+._product_item .img{
+	width: 100%;
+	display: block;
+}
 ._product_item img{
-	margin: 0 auto;
+	display: block !important;
 }
 ._product_item .name{
 	font-size: 18px;

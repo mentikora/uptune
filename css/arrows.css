@@ -34,4 +34,18 @@
 	.brands_slider_wrapper .icon-right-arrow{ right: -80px; }
 
 /* mainpage slider recommended products */
-.mainpage_recommended{}
+
+/*
+	a little bit skull,
+	make arrows with zIndex 1 to make click possible on slide item
+*/
+.brands_slider_wrapper .owl-nav,
+.mainpage_recommended .owl-nav{
+	z-index: 1;
+}
+.brands_slider_wrapper .owl-stage-outer,
+.mainpage_recommended .owl-stage-outer{
+	z-index: 2;
+}
+
+
