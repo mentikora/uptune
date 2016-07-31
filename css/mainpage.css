@@ -33,7 +33,7 @@
     -ms-flex-align: center;
     align-items: center;
 
-		height: 250px;
+		height: 180px;
 		overflow: hidden;
 		position: relative;
 		margin-bottom: 28px;
@@ -45,9 +45,13 @@
 	}
 		._types ._types_brand h2{
 			color: #0c0c0c;
-			font-size: 30px;
+			font-size: 20px;
 			text-transform: uppercase;
-			
+			text-align: left;
+
+			position: relative;
+			z-index: 2;
+
 			width: 35%;
 			margin: 0 25px;
 
@@ -141,4 +145,11 @@
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
-			
+
+/* mainpage recomended */
+.mainpage_recommended{
+	padding: 35px 0;
+}
+	.mainpage_recommended	h2{
+		margin-bottom: 35px;
+	}
