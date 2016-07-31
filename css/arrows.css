@@ -2,7 +2,12 @@
 .owl-next.icon-right-arrow{
 	-webkit-transition: all .25s ease-in-out;
 	transition: all .25s ease-in-out;
+	color: #0c0c0c;
 }
+	.owl-prev.icon-left-arrow:hover,
+	.owl-next.icon-right-arrow:hover{
+		color: #159ad4;
+	}
 
 /* mainpage big slider arrows */
 .mainpage_slider .owl-nav{ margin-top: -40px; }
@@ -24,11 +29,9 @@
 .brands_slider_wrapper .icon-right-arrow{
 	position: relative;
 	font-size: 50px;
-	color: #0c0c0c;
 }
-	.brands_slider_wrapper .icon-left-arrow:hover,
-	.brands_slider_wrapper .icon-right-arrow:hover{
-		color: #159ad4;
-	}
 	.brands_slider_wrapper .icon-left-arrow{ left: -80px; }
 	.brands_slider_wrapper .icon-right-arrow{ right: -80px; }
+
+/* mainpage slider recommended products */
+.mainpage_recommended{}
