@@ -4,22 +4,24 @@
 
 	background: #201f1f url('images/pattern-2.png') repeat 0 0;
 }
-@media(max-width: 991px){
-	#header{
-		width: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1000;
-		
-		height: 70px;
+
+	@media(max-width: 991px){
+		#header{
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1000;
+			
+			height: 70px;
+		}
+		#header .logo{
+			width: 110px;
+			margin: 0 auto;
+			float: none !important;
+		}
 	}
-	#header .logo{
-		width: 110px;
-		margin: 0 auto;
-		float: none !important;
-	}
-}
+
 	#header .logo{
 		display: block;
 	}
@@ -71,12 +73,15 @@
 			right: -5px;
 		}
 
-	.header_nav a:hover{
+	.header_nav a:hover,
+	.header_nav a.active{
 		color: #009ad3;
 		text-decoration: none;
 	}
 		.header_nav a:hover:before,
-		.header_nav a:hover:after{
+		.header_nav a:hover:after,
+		.header_nav a.active:before,
+		.header_nav a.active:after{
 			opacity: 1;
 			visibility: visible;
 			width: 120%;

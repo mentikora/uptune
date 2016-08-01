@@ -12,6 +12,14 @@
 	.brands_slider_wrapper a{
 		display: block;
 	}
+	@media(max-width: 768px){
+		.brands_slider_wrapper{
+			margin-bottom: 30px;
+		}
+		.brands_slider_wrapper .owl-controls{
+			display: none;
+		}
+	}
 
 ._types{
 

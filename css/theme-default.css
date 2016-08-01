@@ -157,6 +157,7 @@ body{
   flex: 1 0 auto;
 }
 @media(max-width: 991px){
+  /* add padding to wrapper cuz header => sticky and we need space on top*/
   #wrapper{
     padding-top: 70px;
   }
