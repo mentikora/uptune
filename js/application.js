@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
-	console.log(123);
+	//menu switcher
+	$('.menu_switch').on('click', function(){
+		$(this).toggleClass('active');
+		$('#mobile_menu').toggleClass('open');
+	});
 
 });

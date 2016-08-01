@@ -38,6 +38,10 @@
 		font-weight: 700;
 		color: #333333;
 	}
+		._news_item .date i{
+			color: #009ad3;
+			margin-right: 10px;
+		}
 	._news_item .detailed{
 		font-size: 14px;
 		font-weight: 700;
