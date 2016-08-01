@@ -156,6 +156,11 @@ body{
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
+@media(max-width: 991px){
+  #wrapper{
+    padding-top: 70px;
+  }
+}
 #footer{
 	-webkit-box-flex: 0;
 	-webkit-flex: 0 0 auto;
