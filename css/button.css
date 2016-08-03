@@ -3,6 +3,7 @@
 	text-align: center;
 	position: relative;
 	display: inline-block;
+	cursor: pointer;
 
 	background-color: #007bff;
 }
@@ -38,6 +39,8 @@
 		text-decoration: none;
 	}
 	/* TYPEOF button */
+
+	/* button text */
 	._button.text{
 		height: 50px;
 		line-height: 50px;
@@ -82,5 +85,26 @@
 			font-size: 22px;
 		}
 		._button.cart:hover{
+			color: #0c0c0c;
+		}
+
+	/* button close*/
+	._button.exit{
+		height: 32px;
+		line-height: 32px;
+		padding: 0 4px;
+
+		color: #fff;
+	}
+		._button.exit:before{
+			border-width: 0 0 32px 10px;
+		}
+		._button.exit:after{
+			border-width: 32px 10px 0 0;
+		}
+		._button.exit i{
+			font-size: 22px;
+		}
+		._button.exit:hover{
 			color: #0c0c0c;
 		}

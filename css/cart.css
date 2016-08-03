@@ -1,0 +1,33 @@
+.modal{
+	padding-right: 0 !important;
+}
+.cart_wrapper{
+	margin-top: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #fff;
+	border: 1px solid #159ad4;
+	position: relative;
+}
+
+.cart_wrapper ._button{
+	position: absolute;
+	top: -15px;
+	right: -12px;
+}
+
+/* if cart is empty */
+.empty_state{
+	margin: 130px 0 150px 0;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 48px;
+	color: #009ad3;
+}
+	.empty_state i {
+		position: relative;
+		top: 18px;
+		left: 0;
+		font-size: 85px;
+		margin-right: 20px;
+	}
