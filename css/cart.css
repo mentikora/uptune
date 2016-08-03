@@ -73,7 +73,7 @@
 			color: #b73e40;
 		}
 	.cart_item_name{
-		font-size: 16px;
+		word-break: break-all;
 		font-size: 19px;
 		color: #0c0c0c;
 	}
