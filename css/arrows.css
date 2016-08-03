@@ -23,6 +23,15 @@
 	.mainpage_slider .icon-left-arrow{ margin-left: 80px; }
 	.mainpage_slider .icon-right-arrow{ margin-right: 80px; }
 
+	@media(max-width: 991px){
+		.mainpage_slider .icon-left-arrow,
+		.mainpage_slider .icon-right-arrow{
+			font-size: 50px;
+		}
+		.mainpage_slider .icon-left-arrow{ margin-left: 40px;}
+		.mainpage_slider .icon-right-arrow{ margin-right: 40px;}
+	}
+
 /* mainpage slider brands */
 .brands_slider_wrapper .owl-nav{ margin-top: -25px; }
 .brands_slider_wrapper .icon-left-arrow,
@@ -32,6 +41,15 @@
 }
 	.brands_slider_wrapper .icon-left-arrow{ left: -80px; }
 	.brands_slider_wrapper .icon-right-arrow{ right: -80px; }
+
+	@media(max-width: 991px){
+		.brands_slider_wrapper .icon-left-arrow,
+		.brands_slider_wrapper .icon-right-arrow{
+			font-size: 20px;
+		}
+		.brands_slider_wrapper .icon-left-arrow{ left: -15px; }
+		.brands_slider_wrapper .icon-right-arrow{ right: -15px; }
+	}
 
 /* mainpage slider recommended products */
 
