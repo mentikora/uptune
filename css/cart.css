@@ -11,24 +11,26 @@
 	position: relative;
 }
 
-.cart_wrapper ._button{
+.cart_wrapper ._button.exit{
 	position: absolute;
 	top: -15px;
 	right: -12px;
 }
 
 .cart_header{
+	padding-bottom: 5px;
+	margin-top: 40px;
+
 	font-size: 18px;
 	color: #3f3f3f;
 	font-weight: 600;
+	border-bottom: 2px solid #f3f3f3;
 }
 
 .cart_item{
 	width: 100%;
 	padding: 20px 0;
 	border-bottom: 1px solid #f3f3f3;
-	
-	
 
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -51,7 +53,16 @@
 	@media(max-width: 992px){
 		.cart_item{
 			text-align: center;
+
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
 		}
+			.cart_item *{
+				margin-top: 15px;
+			}
 		.cart_item img{
 			margin: 0 auto;
 		}
@@ -105,6 +116,91 @@
 			line-height: 14px;
 
 			margin-bottom: 5px;
+		}
+
+/* cart_counter_wrapper */
+.cart_counter_wrapper{
+	width: 100px;
+	margin: 0 auto;
+}
+	.cart_counter_wrapper *{
+		float: left;
+		height: 32px;
+		line-height: 32px;
+	}
+	.cart_item_counter{
+		width: 40px;
+		border: none;
+
+		font-size: 14px;
+		color: #3f3f3f;
+		text-align: center;
+		background: url('images/cart_number.jpg') no-repeat 0 0;
+	}
+		.cart_item_counter:focus{
+			outline: none;
+		}
+	.cart_minus,
+	.cart_plus{
+		width: 30px;
+		cursor: pointer;
+	}
+		.cart_minus{
+			background: url('images/cart_minus.jpg') no-repeat 0 0;
+		}
+		.cart_plus{
+			background: url('images/cart_plus.jpg') no-repeat 0 0;
+		}
+
+.cart_footer{
+	border-top: 2px solid #f3f3f3;
+	padding-top: 25px;
+}
+	.continue_shopping_button{
+		display: inline-block;
+		margin-top: 10px;
+
+		font-weight: 600;
+		color: #0c0c0c;
+		text-transform: uppercase;
+		font-size: 16px;
+		
+		-webkit-transition: color .25s ease-in-out;
+		transition: color .25s ease-in-out;
+	}
+	.continue_shopping_button:hover{
+		color: #159ad4;
+		text-decoration: none;
+	}
+	@media(max-width: 992px){
+		._button.withInput{
+			width: 80%;
+		}
+		.continue_shopping_button{
+			margin-bottom: 15px;
+		}
+	}
+
+	/* cart summ */
+	.cart_summ{
+		text-align: right;
+		font-size: 18px;
+		color: #3f3f3f;
+		line-height: 24px;
+	}
+		@media(max-width: 992px){
+			.cart_summ{
+				text-align: center;
+			}	
+		}
+		.cart_summ .total_eu{
+			color: #009ad3;
+			font-size: 24px;
+			font-weight: 600;
+		}
+		.cart_summ .total_uah{
+			font-size: 20px;
+			color: #5a5b5b;
 		}
 
 /* if cart is empty */

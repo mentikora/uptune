@@ -35,7 +35,8 @@
 		border-style: solid;
 		border-color: #007bff transparent transparent transparent;
 	}
-	._button:hover{
+	._button:hover
+	._button:focus{
 		text-decoration: none;
 	}
 	/* TYPEOF button */
@@ -111,3 +112,15 @@
 		._button.exit:hover{
 			color: #0c0c0c;
 		}
+
+	/* button with input*/
+	._button.withInput{
+		padding: 0;
+	}
+	._button.withInput input{
+		border: 0;
+		outline: 0;
+		background: inherit;
+		color: inherit;
+		padding: 0 25px;
+	}

@@ -69,20 +69,20 @@
       <div class="col-md-10 col-md-offset-1 ">
         
         <!-- if empty -->
-        <div class="empty_state center">
+        <!-- <div class="empty_state center">
           <i class="icon-shopping-cart-black-shape"></i>
           Корзина порожня
-        </div>
+        </div> -->
 
         <!-- else -->
-        <div class="row">
+        <form class="row">
           <!-- cart header -->
-          <header class="cart_header visible-lg visible-md">
+          <header class="cart_header visible-lg visible-md clearfix">
             <div class="col-md-6 col-md-offset-1">
               Товар  
             </div>
-            <div class="col-md-3">
-              Кількість
+            <div class="col-md-3 center">
+              Кількість 
             </div>
             <div class="col-md-2 align_right">
               Ціна
@@ -109,7 +109,11 @@
               </p>  
             </div>
             <div class="col-md-3 col-xs-12">
-              1x1
+              <div class="cart_counter_wrapper clearfix">
+                <div class="cart_minus"></div>
+                <input class="cart_item_counter" type="text" value='1'>
+                <div class="cart_plus"></div>
+              </div>
             </div>
             <div class="col-md-2 col-xs-12">
               <div class="cart_item_price_wrapper">
@@ -143,7 +147,11 @@
               </p>  
             </div>
             <div class="col-md-3 col-xs-12">
-              1x1
+              <div class="cart_counter_wrapper clearfix">
+                <div class="cart_minus"></div>
+                <input class="cart_item_counter" type="text" value='1'>
+                <div class="cart_plus"></div>
+              </div>
             </div>
             <div class="col-md-2 col-xs-12">
               <div class="cart_item_price_wrapper">
@@ -160,7 +168,24 @@
             </div>
           </div>
 
-        </div>
+          <footer class="cart_footer clearfix">
+            <div class="row">
+              <div class="col-sm-7 center">
+                <div class="_button text withInput">
+                  <input type="submit" value="ОФОРМИТИ ЗАМОВЛЕННЯ">
+                </div>
+                <a href="javascript:void(0);" class="continue_shopping_button">продовжити покупки</a>
+              </div>
+              <div class="col-sm-5 cart_summ">
+                Сума: 
+                <span class="total_eu">1120 €</span>
+                <br> 
+                <span class="total_uah">30800 грн.</span>
+              </div>
+            </div>
+          </footer>
+        </form>
+
       </div>
     </div>
   </div>
