@@ -36,7 +36,8 @@ table {
 	border-spacing: 0;
 }
 p{ margin: 0; }
-.center{text-align: center;}
+.center{ text-align: center; }
+.align_right{ text-align: right; }
 
 
 /* clearfix */

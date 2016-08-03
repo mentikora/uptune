@@ -103,7 +103,10 @@
 			border-width: 32px 10px 0 0;
 		}
 		._button.exit i{
-			font-size: 22px;
+			position: relative;
+			top: 2px;
+			left: 0;
+			font-size: 16px;
 		}
 		._button.exit:hover{
 			color: #0c0c0c;
