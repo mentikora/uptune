@@ -4,6 +4,9 @@
 
 	background: #201f1f url('images/pattern-2.png') repeat 0 0;
 }
+	#header > .container {
+		position: relative;
+	}
 
 	@media(max-width: 991px){
 		#header{
