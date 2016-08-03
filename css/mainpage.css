@@ -3,6 +3,14 @@
 	max-height: 700px;
 	width: 100%;
 }
+@media(max-width: 991px){
+	.mainpage_slider .owl-prev,
+	.mainpage_slider .owl-next {
+		font-size: 50px !important;
+	}
+	.mainpage_slider .owl-prev{ margin-left: 40px !important; }
+	.mainpage_slider .owl-next{ margin-right: 40px !important; }
+}
 
 /* brands slider */
 .brands_slider_wrapper{
