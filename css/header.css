@@ -4,27 +4,88 @@
 
 	background: #201f1f url('images/pattern-2.png') repeat 0 0;
 }
-@media(max-width: 991px){
-	#header{
-		width: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1000;
-		
-		height: 70px;
+
+	@media(max-width: 991px){
+		#header{
+			width: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1000;
+			
+			height: 70px;
+		}
+		#header .logo{
+			width: 110px;
+			margin: 0 auto;
+			float: none !important;
+		}
 	}
-	#header .logo{
-		width: 110px;
-		margin: 0 auto;
-		float: none !important;
-	}
-}
+
 	#header .logo{
 		display: block;
 	}
 
-/* navigation */
+#header .header_search,
+#header .header_cart{
+	display: block;
+	float: right;
+	cursor: pointer;
+
+	margin-top: 20px;	
+}
+	@media(max-width: 992px){
+		#header .header_search,
+		#header .header_cart{
+			margin-top: 10px;
+		}
+		#header .header_search,
+		#header .header_cart i{
+			font-size: 22px !important;
+		}
+		#header .header_cart{
+			margin-left: 15px !important;
+		}
+	}
+	#header .header_search,
+	#header .header_cart i{
+		font-size: 30px;
+		color: #009ad3;
+
+		-webkit-transition: color .25s ease-in-out;
+		-o-transition: color .25s ease-in-out;
+		transition: color .25s ease-in-out;
+	}
+	#header .header_search:hover,
+	#header .header_cart:hover i{
+		color: #36c9ff;	
+	}
+	
+#header .header_search{
+
+}
+#header .header_cart{
+	position: relative;
+	margin-left: 30px;
+}
+	#header .cart_item_counter{
+		display: block;
+		position: absolute;
+		top: -6px;
+		right: -6px;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		
+		line-height: 16px;
+		background: #fff;
+		font-weight: 700;
+		font-size: 10px;
+		color: #0f0f0f;
+		text-align: center;
+	}
+
+/*=== NAVIGATION ===*/
 .header_nav ul{
 	margin: 0;
 	height: 70px;
@@ -71,12 +132,15 @@
 			right: -5px;
 		}
 
-	.header_nav a:hover{
+	.header_nav a:hover,
+	.header_nav a.active{
 		color: #009ad3;
 		text-decoration: none;
 	}
 		.header_nav a:hover:before,
-		.header_nav a:hover:after{
+		.header_nav a:hover:after,
+		.header_nav a.active:before,
+		.header_nav a.active:after{
 			opacity: 1;
 			visibility: visible;
 			width: 120%;

@@ -99,7 +99,7 @@
 		}
 	/* bot */
 	#footer .bot{
-		height: 47px;
+		min-height: 47px;
 		line-height: 47px;
 		border-top: 1px solid #4d4d4d;
 	}
@@ -110,6 +110,22 @@
 			font-size: 16px;
 		}
 
+		@media(max-width: 768px){
+			#footer .bot{
+				text-align: center;
+			}
+			#footer .bot * {
+				float: none !important;
+			}	
+		}
+		
+	@media(max-width: 768px){
+		#footer .top,
+		#footer .mid{
+			margin-bottom: 25px;
+		}
+	}
+
 #footer .welldo{
 	position: relative;
 	top: 6px;
@@ -117,4 +133,14 @@
 	
 	line-height: 28px;
 	font-size: 28px;
+}
+
+@media (min-width: 992px){
+	.footer_fake_margin{
+		/* 
+			(8.33333333/2) + 8.33333333333 
+		*/
+		margin-left: 12.5%;
+		margin-right: 12.5%;
+	}
 }

@@ -6,4 +6,8 @@ $(document).ready(function() {
 		$('#mobile_menu').toggleClass('open');
 	});
 
+	// $('.header_cart').on('shown.bs.modal', function () {
+	//   $('#myInput').focus()
+	// })
+
 });
