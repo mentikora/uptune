@@ -40,30 +40,129 @@
         <span class="header_search icon-magnifying-glass"></span>
       </div>
     </div>
-
   </div>
 
 </header>
 
-<!-- cart -->
-<div class="modal fade" tabindex="-1" role="dialog" id="cart">
-  <div class="container">
-    <div class="col-md-8 col-md-offset-2 cart_wrapper" role="document">
-      <span type="button" class="_button exit" data-dismiss="modal" aria-label="Close">
-        <i aria-hidden="true" class="icon-delete-button"></i>
-      </span>
-      <h2 class="center h2_style">
-        корзина
-      </h2>
-      <div class="col-md-10 col-md-offset-1 ">
-        
-        <!-- if empty -->
-        <div class="empty_state center">
-          <i class="icon-shopping-cart-black-shape"></i>
-          Корзина порожня
-        </div>
 
-        <!-- else -->
+
+<!-- main content wrapper-->
+<section id="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <ol class="breadcrumb visible-lg visible-md row">
+          <li><a href="#">Home</a></li>
+          <li class="active">Корзина</li>
+        </ol>
+      </div> 
+      <h1 class="col-sm-4 h2_style center">
+        корзина
+      </h1>
+    </div>
+  </div>
+
+  <div class="container order_page page_margin_bottom">
+    <div class="row">
+      <!-- left -->
+      <aside class="col-md-6 left">
+        <form action="" class="row">
+          <div class="form-group col-md-6">
+            <label for="">
+              <span>* </span>
+              Прізвище, ім’я
+            </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="">
+              <span>* </span>
+              Номер телефону
+            </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-xs-12">
+            <label for="">
+              <span>* </span>
+              Електронна пошта
+            </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="">
+              <span>* </span>
+              Варіант доставки
+            </label>
+            <select class="form-control">
+              <option value="">1</option>
+              <option value="">1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="">
+              <span>* </span>
+              Варіант оплати
+            </label>
+            <select class="form-control">
+              <option value="">1</option>
+              <option value="">1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="">
+              <span>* </span>
+              Область
+            </label>
+            <select class="form-control">
+              <option value="">1</option>
+              <option value="">1</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="">
+              <span>* </span>
+              Населений пункт
+            </label>
+            <select class="form-control">
+              <option value="">1</option>
+              <option value="">1</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-4">
+            <label for="">
+              Вулиця
+            </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="">
+              Будинок
+            </label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="">
+              Квартира
+            </label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group col-xs-12">
+            <label for="">Примітки</label>
+            <textarea rows="3" class="form-control"></textarea>
+          </div>
+          <div class="col-xs-12">
+            <div class="_button text withInput">
+              <input type="submit" value="Замовити">
+            </div>
+          </div>
+
+        </form>
+      </aside>
+      
+      <!-- right -->
+      <aside class="col-md-6 right">
         <form class="row">
           <!-- cart header -->
           <header class="cart_header visible-lg visible-md clearfix">
@@ -159,13 +258,7 @@
 
           <footer class="cart_footer clearfix">
             <div class="row">
-              <div class="col-sm-7 center">
-                <div class="_button text withInput">
-                  <input type="submit" value="ОФОРМИТИ ЗАМОВЛЕННЯ">
-                </div>
-                <a href="javascript:void(0);" class="continue_shopping_button">продовжити покупки</a>
-              </div>
-              <div class="col-sm-5 cart_summ">
+              <div class="col-sm-12 cart_summ">
                 Сума: 
                 <span class="total_eu">1120 €</span>
                 <br> 
@@ -174,117 +267,7 @@
             </div>
           </footer>
         </form>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- main content wrapper-->
-<section id="wrapper">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <ol class="breadcrumb visible-lg visible-md row">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Makers</a></li>
-          <li class="active">Data</li>
-        </ol>
-      </div> 
-      <h1 class="col-sm-4 h2_style center">
-        about
-      </h1>
-    </div>
-  </div>
-
-  <div class="container contacts_page page_margin_bottom">
-    <div class="row">
-      <aside class="col-sm-6 left">
-        <h3 class="h3_style">Зворотній зв’язок</h3>
-        <form action="" class="row">
-          <div class="form-group col-md-6">
-            <label for="">Прізвище, ім’я</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="">Номер телефону</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="form-group col-xs-12">
-            <label for="">Електронна пошта</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="form-group col-xs-12">
-            <label for="">Повідомлення</label>
-            <textarea rows="3" class="form-control"></textarea>
-          </div>
-          <div class="col-xs-12">
-            <div class="_button text withInput">
-              <input type="submit" value="Надіслати">
-            </div>
-          </div>
-        </form>
       </aside>
-      <aside class="col-sm-6 right">
-        <h3 class="h3_style">Контакти</h3>
-        <div class="ck_editor">
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut laboriosam, sit consequuntur, nam minus esse velit nobis dignissimos rerum eveniet rem ducimus quaerat adipisci! Aperiam officiis quia aliquam placeat fugiat?</div>
-          <div>Illo adipisci unde sequi excepturi natus commodi impedit, accusantium, modi fuga ipsa accusamus voluptatum sunt eum praesentium. Nobis quisquam obcaecati quidem quia modi aut nam. Atque commodi quidem veritatis. Officia.</div>
-          <div>Soluta nisi ratione mollitia accusamus obcaecati a aut asperiores neque eligendi, reiciendis fuga ipsam illo reprehenderit aperiam atque modi quisquam, tempore iure doloremque laudantium quam ut non! Maxime, itaque voluptas.</div>
-        </div>
-        <div class="contacts_social row">
-          <div class="col-md-6">
-            <i class="icon-close-envelope"></i> 
-            <a href="mailto:info@uptune.com.ua">info@uptune.com.ua</a>
-          </div>
-          <div class="col-md-6">
-            <i class="icon-facebook-logo"></i> 
-            <a href="javascript:void(0);">fb.com/up-tune</a>
-          </div>
-          <div class="col-md-6">
-            <i class="icon-telephone-handle-silhouette"></i> 
-            <span>+380 (12) 345 67 89</span>
-          </div>
-          <div class="col-md-6">
-            <i class="icon-vk"></i> 
-            <a href="javascript:void(0);">vk.com/up-tune</a>
-          </div>
-          <div class="col-md-6">
-            <i class="icon-placeholder"></i> 
-            <a href="javascript:void(0);">Lviv, 79020, Ukraine</a>
-          </div>
-          <div class="col-md-6">
-            <i class="icon-skype-logo"></i> 
-            <a href="javascript:void(0);">up-tune</a>
-          </div>
-          <div class="col-md-6">
-            <i class="icon-clock-circular-outline"></i> 
-            <span>Пн-Пт з 11:00 до 20:00</span>
-          </div>
-          <div class="col-md-6">
-            
-            <a href="javascript:void(0);">
-              <i class="icon-youtube-logo"></i> 
-              youtube.com/channel/up-tune
-            </a>
-          </div>          
-        </div>
-      </aside>
-    </div>
-  </div>
-  
-  <!-- full -->
-  <div class="container-fluid mainpage_full mainpage_about">
-    <div class="fake row">
-      <div class="container center">
-        <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <div class="ck_editor">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi sequi libero, ab repellendus voluptate dolore iste, aperiam dolorem dolor perferendis, nihil! Ab, magnam nemo architecto at quod provident ipsam, ullam.
-          </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
