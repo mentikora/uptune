@@ -1,0 +1,11 @@
+.page_nav{
+	float: right;
+	width: 140px;
+	text-align: center;
+}
+	@media(max-width: 768px){
+		.page_nav{
+			float: none;
+			margin: 0 auto;
+		}
+	}

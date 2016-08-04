@@ -116,8 +116,13 @@
 	/* button with input*/
 	._button.withInput{
 		padding: 0;
+		width: calc(100% - 20px);
+		margin: 0 auto;
+		display: block;
+		color: #fff;
 	}
 	._button.withInput input{
+		width: 100%;
 		border: 0;
 		outline: 0;
 		background: inherit;

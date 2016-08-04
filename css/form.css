@@ -1,0 +1,18 @@
+/* rewrite bootstrap */
+.form-control{
+	height: 43px;
+	line-height: 43px;
+	padding: 0 10px;
+	border: 1px solid #009ad3;
+
+	border-radius: 0;
+	font-size: 14px;
+	color: #3f3f3f;
+}
+label{
+	margin-bottom: 5px;
+	
+	font-size: 16px;
+	font-weight: 600;
+	color: #0c0c0c;
+}

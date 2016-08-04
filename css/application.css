@@ -6,9 +6,16 @@
 @import "footer.css";
 
 @import "mainpage.css";
+@import "about.css";
+
+@import "types.css";
 @import "news.css";
 @import "product.css";
 
+@import "search.css";
 @import "cart.css";
+
+@import "pagination.css";
 @import "button.css";
 @import "arrows.css";
+@import "form.css";

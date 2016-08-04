@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uptune</title>
+  <link rel="shortcut icon" type="image/ico" href="favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+
+<!-- header -->
+<header id="header">
+  <div class="container">
+    <div class="row">
+
+      <!-- mobile menu btn -->
+      <div class="col-xs-4 hidden-lg hidden-md">
+        <div class="menu_switch">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="col-xs-4 col-md-2">
+        <a href="/" class="logo pull-left">
+          <img src="img/logo.png" alt="logo" class="img-responsive">
+        </a>
+      </div>
+
+      <!-- navigation -->
+      <nav class="header_nav col-sm-8 visible-lg visible-md">
+        <ul>
+          <li><a href="javascript:void(0);" class="active">виробники</a></li>
+          <li><a href="javascript:void(0);">каталог</a></li>
+          <li><a href="javascript:void(0);">новини</a></li>
+          <li><a href="javascript:void(0);">доставка та оплата</a></li>
+          <li><a href="javascript:void(0);">про нас</a></li>
+        </ul>
+      </nav>
+
+      <div class="col-xs-4 col-md-2">
+        <span class="header_cart" data-toggle="modal" data-target="#cart">
+          <span class="cart_item_counter">99</span>
+          <i class="icon-shopping-cart-black-shape"></i>
+        </span>
+        <span class="header_search icon-magnifying-glass"></span>
+      </div>
+    </div>
+
+    <!-- search -->
+    <div id="search">
+      <input type="text" placeholder="some item name">
+      <span class="close_search">
+        <i class="icon-delete-button"></i>
+      </span>
+    </div>
+
+  </div>
+
+  <!-- mobile menu -->
+  <nav id="mobile_menu">
+    <ul>
+      <li><a href="javascript:void(0);">виробники</a></li>
+      <li><a href="javascript:void(0);">каталог</a></li>
+      <li><a href="javascript:void(0);">новини</a></li>
+      <li><a href="javascript:void(0);">доставка та оплата</a></li>
+      <li><a href="javascript:void(0);">про нас</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- cart -->
+<div class="modal fade" tabindex="-1" role="dialog" id="cart">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2 cart_wrapper" role="document">
+      <span type="button" class="_button exit" data-dismiss="modal" aria-label="Close">
+        <i aria-hidden="true" class="icon-delete-button"></i>
+      </span>
+      <h2 class="center h2_style">
+        корзина
+      </h2>
+      <div class="col-md-10 col-md-offset-1 ">
+        
+        <!-- if empty -->
+        <div class="empty_state center">
+          <i class="icon-shopping-cart-black-shape"></i>
+          Корзина порожня
+        </div>
+
+        <!-- else -->
+        <form class="row">
+          <!-- cart header -->
+          <header class="cart_header visible-lg visible-md clearfix">
+            <div class="col-md-6 col-md-offset-1">
+              Товар  
+            </div>
+            <div class="col-md-3 center">
+              Кількість 
+            </div>
+            <div class="col-md-2 align_right">
+              Ціна
+            </div>
+          </header>
+          
+          <!-- cart item -->
+          <div class="cart_item">
+            <div class="col-md-1 col-xs-12">
+              <span class="delete_cart_item icon-delete-button"></span>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <img src="img/brand-test-img.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <p class="cart_item_name">
+                Амортизатор АГАТ задний Спорт (красный/синий/зелений/черный/белый)
+              </p>
+              <p class="cart_item_name_bonus">
+                - free shipping
+              </p>
+              <p class="cart_item_name_bonus">
+                - anti-циганная установка
+              </p>  
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="cart_counter_wrapper clearfix">
+                <div class="cart_minus"></div>
+                <input class="cart_item_counter" type="text" value='1'>
+                <div class="cart_plus"></div>
+              </div>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <div class="cart_item_price_wrapper">
+                <div class="cart_item_price">
+                  99999 
+                </div>
+                <div class="cart_item_price_small">
+                  99999
+                </div>
+                <div class="cart_item_price_small">
+                  99999
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cart item -->
+          <div class="cart_item">
+            <div class="col-md-1 col-xs-12">
+              <span class="delete_cart_item icon-delete-button"></span>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <img src="img/brand-test-img.png" alt="" class="img-responsive">
+            </div>
+            <div class="col-md-4 col-xs-12">
+              <p class="cart_item_name">
+                Індивідуальне спортивне кермо Ford Focus ST mk3
+              </p>
+              <p class="cart_item_name_bonus">
+                -sdsadasdasd
+              </p>  
+            </div>
+            <div class="col-md-3 col-xs-12">
+              <div class="cart_counter_wrapper clearfix">
+                <div class="cart_minus"></div>
+                <input class="cart_item_counter" type="text" value='1'>
+                <div class="cart_plus"></div>
+              </div>
+            </div>
+            <div class="col-md-2 col-xs-12">
+              <div class="cart_item_price_wrapper">
+                <div class="cart_item_price">
+                  99999 
+                </div>
+                <div class="cart_item_price_small">
+                  99999
+                </div>
+                <div class="cart_item_price_small">
+                  99999
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="cart_footer clearfix">
+            <div class="row">
+              <div class="col-sm-7 center">
+                <div class="_button text withInput">
+                  <input type="submit" value="ОФОРМИТИ ЗАМОВЛЕННЯ">
+                </div>
+                <a href="javascript:void(0);" class="continue_shopping_button">продовжити покупки</a>
+              </div>
+              <div class="col-sm-5 cart_summ">
+                Сума: 
+                <span class="total_eu">1120 €</span>
+                <br> 
+                <span class="total_uah">30800 грн.</span>
+              </div>
+            </div>
+          </footer>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- main content wrapper-->
+<section id="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <ol class="breadcrumb visible-lg visible-md row">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Makers</a></li>
+          <li class="active">Data</li>
+        </ol>
+      </div> 
+      <h1 class="col-sm-4 h2_style center">
+        delivery
+      </h1>
+    </div>
+  </div>
+
+  <div class="container delivery_page page_margin_bottom">
+    <div class="ck_editor">
+      <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum rerum ducimus, similique iste voluptatibus ipsa in quae, molestiae est obcaecati at quasi. Nihil in debitis itaque ullam quas! Eligendi, perferendis.</div>
+      <div>Cupiditate cum nam molestiae quibusdam eligendi, sequi earum accusamus minima atque qui et tempora, aperiam reiciendis asperiores a recusandae doloribus ratione temporibus commodi similique sit, quis vel? Veniam, explicabo tempore.</div>
+      <div>Eius eos culpa itaque, explicabo dignissimos eveniet mollitia beatae aliquid repudiandae quasi accusantium necessitatibus, est. Amet possimus aliquam, molestias veritatis sapiente corporis debitis nostrum! Aspernatur voluptas fuga adipisci at veritatis.</div>
+      <div>Consectetur dolorum omnis voluptatem explicabo velit iure itaque enim cupiditate unde rerum, placeat id. Quos minus, aperiam tenetur, cum blanditiis culpa harum nostrum sequi quasi sit tempora! Amet, perferendis, maxime.</div>
+      <div>Pariatur aut aliquid, quibusdam ex nisi id esse magni amet, vel eius possimus vitae error aperiam repellat dolor quam voluptate repellendus quod, laudantium eaque aspernatur. At deserunt, cum totam possimus.</div>
+      <div>Delectus blanditiis fugit, tempore excepturi deserunt eum dolorum, asperiores dolorem ipsam architecto sit animi itaque, vel error veniam. Soluta, consectetur deserunt provident laboriosam id debitis rem quaerat quia ipsa repellat.</div>
+      <div>Odit atque aliquid repellat quo, qui maxime officiis, ipsam inventore est similique dolorum nostrum quasi quos quis, quod obcaecati tempora excepturi. Fuga aperiam eveniet officia doloribus vel iusto dolorum numquam.</div>
+      <div>Sint, odio praesentium atque ducimus quas cumque reprehenderit possimus nulla accusantium alias sed, quasi, non aspernatur nemo tenetur, ut itaque enim ab consequatur aliquam eveniet accusamus tempora aperiam vel. Ducimus!</div>
+      <div>Laudantium odit, molestias natus! Dolore maiores, ducimus, corporis unde suscipit harum nobis odit enim, sed error alias voluptatem iure? Qui odit vitae vel, ab excepturi magni, fugit quidem natus eligendi!</div>
+      <div>Expedita, itaque voluptate tempore saepe sed explicabo aspernatur cupiditate at natus tenetur assumenda repellat dolores blanditiis amet nulla similique placeat, molestias fuga iure odio aut sit ea magni inventore dignissimos!</div>
+    </div>
+  </div>
+
+
+</section>
+
+<!-- footer -->
+<footer id="footer">
+  <div class="top center">
+    <div class="container">
+      Слідкуйте за нами в 
+      <a href="javascript:void(0);">instagram</a> 
+      та 
+      <a href="javascript:void(0);">FACEBOOK</a>
+    </div>
+  </div>
+  <div class="footer_fake">
+    <div class="fake">
+      <div class="mid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>
+                <i class="icon-right-arrow"></i>
+                меню
+              </h3>
+              <ul>
+                <li>
+                  <i class="icon-right-arrow"></i>
+                  <a href="javascript:void(0);">Каталог</a>
+                </li>
+                <li>
+                  <i class="icon-right-arrow"></i>
+                  <a href="javascript:void(0);">Виробники</a>
+                </li>
+                <li>
+                  <i class="icon-right-arrow"></i>
+                  <a href="javascript:void(0);">Новини</a>
+                </li>
+                <li>
+                  <i class="icon-right-arrow"></i>
+                  <a href="javascript:void(0);">Доставка та оплата</a>
+                </li>
+                <li>
+                  <i class="icon-right-arrow"></i>
+                  <a href="javascript:void(0);">Про нас</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 footer_fake_margin">
+              <h3>
+               <i class="icon-right-arrow"></i>
+               контакти
+             </h3>
+             <ul>
+               <li>
+                 <i class="icon-close-envelope"></i>
+                 <a href="mailto:info@uptune.com.ua">info@uptune.com.ua</a>
+               </li>
+               <li>
+                 <i class="icon-telephone-handle-silhouette"></i>
+                 <span>+380 (12) 345 67 89</span>
+               </li>
+               <li>
+                 <i class="icon-placeholder"></i>
+                 <span>Lviv, 79020, Ukraine</span>
+               </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>
+               <i class="icon-right-arrow"></i>
+               СОЦ. МЕРЕЖІ
+             </h3>
+             <div class="footer_socials">
+               <a href="javascript:void(0);" class="_icon_link icon-facebook-logo"></a>
+               <a href="javascript:void(0);" class="_icon_link icon-vk"></a>
+               <a href="javascript:void(0);" class="_icon_link icon-skype-logo"></a>
+               <a href="javascript:void(0);" class="_icon_link icon-youtube-logo"></a>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bot">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="pull-left">
+                &copy; 2016 uptune.com.ua
+              </div>
+              <div class="pull-right">
+                ВЕБ-САЙТ СТВОРЕНО СТУДІЄЮ WELLDO
+                <a href="http://welldostudio.com/" target="_blank" class="_icon_link welldo icon-welldo"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- scripts -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/application.js"></script>
+
+</body>
+</html>
