@@ -226,6 +226,24 @@ body{
   color: #0c0c0c;
   line-height: 18px;
 }
+.ck_editor a{
+  color: #009ad3;
+}
+.ck_editor img.ck_editor_news_image{
+  margin: 0 30px 25px 0;
+
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
+  @media(max-width: 768px){
+    .ck_editor img.ck_editor_news_image{
+      float: none;
+      margin: 0 auto 30px;
+      width: 100%;
+    }
+  }
 
 ._icon_link{
   -webkit-transition: all .25s ease-in-out;
@@ -257,5 +275,8 @@ body{
   background: inherit;
 }
 
+.page_margin_bottom{
+  margin-bottom: 50px;
+}
 
 

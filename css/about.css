@@ -1,6 +1,4 @@
-.contacts_page{
-	margin-bottom: 50px;
-}
+
 .contacts_page .h3_style{
 	margin-bottom: 30px;
 }
@@ -25,3 +23,9 @@
 
 		text-decoration: none;
 	}
+
+@media(max-width: 768px){
+	.contacts_page form{
+		margin-bottom: 30px;
+	}
+}

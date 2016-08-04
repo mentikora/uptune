@@ -119,6 +119,7 @@
 		width: calc(100% - 20px);
 		margin: 0 auto;
 		display: block;
+		color: #fff;
 	}
 	._button.withInput input{
 		width: 100%;
