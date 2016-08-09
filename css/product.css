@@ -49,3 +49,40 @@
 ._product_item .cart{
 	margin-right: 10px;
 }
+
+/*=== product_page ===*/
+.product_page input[type="checkbox"]{
+	width: 30px;
+	height: 24px;
+	border: none;
+	background: inherit;
+}
+
+/* product item on page product */
+._product_item.cutted{
+	padding: 0;
+	cursor:  default;
+	border: 0;
+	margin-top: 0;
+}
+	._product_item.cutted:hover{
+		border: 0;
+	}
+	._product_item.cutted .name{
+		font-size: 24px;
+		font-weight: 600;
+	}
+	._product_item.cutted .cart{
+		margin-left: 30px;
+	}
+
+/* product item on page product 2*/
+._product_item.reduced{
+	padding: 25px 15px 15px;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+	._product_item.reduced .name{
+		margin-bottom: 10px;
+		font-size: 16px;
+	}

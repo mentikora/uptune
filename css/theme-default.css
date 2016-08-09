@@ -229,6 +229,12 @@ body{
   font-weight: 600;
   color: #0c0c0c;
 }
+.h3_product{
+  font-size: 24px;
+  font-weight: 600;
+  color: #0c0c0c;
+  margin-bottom: 15px;
+}
 .ck_editor,
 .ck_editor *{
   font-size: 14px;
