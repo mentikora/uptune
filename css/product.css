@@ -27,6 +27,7 @@
 }
 ._product_item img{
 	display: block !important;
+	margin: 0 auto;
 }
 ._product_item .name{
 	font-size: 18px;
@@ -49,6 +50,9 @@
 ._product_item .cart{
 	margin-right: 10px;
 }
+	._product_item .cart:hover{
+		text-decoration: none;
+	}
 
 /*=== product_page ===*/
 .product_page input[type="checkbox"]{
@@ -59,13 +63,15 @@
 }
 
 /* product item on page product */
-._product_item.cutted{
+._product_item.cutted,
+._product_item.cutted_horizontal{
 	padding: 0;
 	cursor:  default;
 	border: 0;
 	margin-top: 0;
 }
-	._product_item.cutted:hover{
+	._product_item.cutted:hover,
+	._product_item.cutted_horizontal:hover{
 		border: 0;
 	}
 	._product_item.cutted .name{
@@ -75,6 +81,54 @@
 	._product_item.cutted .cart{
 		margin-left: 30px;
 	}
+
+/* product item on page product type 2 */
+._product_item.cutted_horizontal{
+	margin-bottom: 15px;
+}
+	._product_item.cutted_horizontal > div{
+		padding: 0;
+	}
+	._product_item.cutted_horizontal .name{
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 28px;
+		overflow: hidden;
+
+		margin-bottom: 0;
+
+		display: -webkit-inline-box;
+		display: -webkit-inline-flex;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-align-content: stretch;
+		-ms-flex-line-pack: stretch;
+		align-content: stretch;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-align: baseline;
+		-webkit-align-items: baseline;
+		-ms-flex-align: baseline;
+		align-items: baseline;
+	}
+		._product_item.cutted_horizontal .dots{
+			display: inline-block;
+			height: 1px;
+			width: 100%;	
+
+			background-image: -webkit-linear-gradient(left, black 33%, rgba(255,255,255,0) 0%);
+	    background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+	    background-position: bottom;
+	    background-size: 4px 2px;
+	    background-repeat: repeat-x;
+		}
+	._product_item.cutted_horizontal .cart{
+		margin-left: 10px;
+	}
+
 
 /* product item on page product 2*/
 ._product_item.reduced{
@@ -86,3 +140,4 @@
 		margin-bottom: 10px;
 		font-size: 16px;
 	}
+
