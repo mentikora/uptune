@@ -15,14 +15,46 @@
 ===================================*/
 
 /* custom */
+.slider_wrapper{
+	display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	
+	width: 100%;
+	max-height: 555px;
+}
 .bxslider li{
 	border: 2px solid #fff;
 	width: 100% !important;
 	cursor: pointer;
+	height: 165px;
+	padding: 25px 0;
+	text-align: center;
 }
-.bxslider li:hover{
+.bxslider li:hover,
+#current_product_image{
 	border: 2px solid #159ad4;
 }
+#current_product_image{
+	position: relative;
+}
+	#current_product_image img{
+		position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto; 
+	}
 
 .bx-wrapper {
 	position: relative;
@@ -33,7 +65,8 @@
 
 .bx-wrapper img {
 	max-width: 100%;
-	display: block;
+	height: 100%;
+	margin: 0 auto;
 }
 
 /** THEME
@@ -118,13 +151,36 @@
 	position: absolute;
   left: 0px;
   right: 0px;
-  font-size: 28px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 30px;
   background: #73c2e5;
   text-align: center;
   margin: 0;
   color: #fff;
 }
+.bx-wrapper .bx-prev i,
+.bx-wrapper .bx-next i{
+	display: inline-block;
+
+	-webkit-transition: color .25s ease-in-out;
+	-moz-transition: color .25s ease-in-out;
+	-ms-transition: color .25s ease-in-out;
+	-o-transition: color .25s ease-in-out;
+	transition: color .25s ease-in-out;
+	
+}
+.bx-wrapper .bx-prev i{ 
+	transform: rotate(-90deg); 
+}
+.bx-wrapper .bx-next i{
+	transform: rotate(90deg); 
+}
+.bx-wrapper .bx-prev:hover,
+.bx-wrapper .bx-next:hover{
+	text-decoration: none;
+	color: #0c0c0c;
+}
+
 .bx-wrapper .bx-prev {
 	top: 0;
 	/*left: 10px;
@@ -151,9 +207,9 @@
 	/*margin-top: -16px;*/
 	/*outline: 0;*/
 	/*width: 32px;*/
+	/*text-indent: -9999px;*/
 	height: 30px;
-	text-indent: -9999px;
-	z-index: 9999;
+	z-index: 5;
 }
 
 .bx-wrapper .bx-controls-direction a.disabled {
@@ -174,6 +230,7 @@
 	outline: 0;
 	background: url(images/controls.png) -86px -11px no-repeat;
 	margin: 0 3px;
+	color: #fff;
 }
 
 .bx-wrapper .bx-controls-auto .bx-start:hover,

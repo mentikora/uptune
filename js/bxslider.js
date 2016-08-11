@@ -53,8 +53,8 @@
 
 		// CONTROLS
 		controls: true,
-		nextText: '<i class="fa fa-chevron-right"></i>',
-		prevText: '<i class="fa fa-chevron-left"></i>',
+		nextText: '<i class="icon-right-arrow"></i>',
+		prevText: '<i class="icon-right-arrow"></i>',
 		nextSelector: null,
 		prevSelector: null,
 		autoControls: false,
