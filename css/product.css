@@ -62,6 +62,13 @@
 	background: inherit;
 }
 
+/* product page media wrapper */
+@media(max-width: 768px){
+	.product_media_wrapper{
+		margin: 0;
+	}
+}
+
 /* product item on page product */
 ._product_item.cutted,
 ._product_item.cutted_horizontal{
