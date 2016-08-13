@@ -1,3 +1,6 @@
+/*=== TOP PAGE NAVIGATION ===*/
+
+/* page_nav */
 .page_nav{
 	float: right;
 	width: 140px;
@@ -9,3 +12,21 @@
 			margin: 0 auto;
 		}
 	}
+
+/* breadcrumbs */
+/* "button" styles in - button.css */
+.breadcrumb{
+	padding: 0 0 0 15px;
+}
+	.breadcrumb .hove{}
+	.breadcrumb .active{}
+
+	.breadcrumb li{ 
+		float: left;
+		margin-right: 12px; 
+	}
+	.breadcrumb li:before,
+	.breadcrumb li:after{
+		display: none;
+	}
+
