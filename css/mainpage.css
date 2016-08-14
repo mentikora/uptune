@@ -81,6 +81,11 @@
 		-webkit-background-size: cover;
 		background-size: cover;
 	}
+	.news_fullwidth{
+		background-image: url('images/news_fullwidth.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
 
 /* mainpage recomended */
 .mainpage_recommended{

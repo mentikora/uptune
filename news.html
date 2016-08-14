@@ -210,23 +210,36 @@
 <!-- main content wrapper-->
 <section id="wrapper">
   <div class="container">
-    <div class="row">
+    <div class="row page_top_navigation">
       <div class="col-sm-4">
         <ol class="breadcrumb visible-lg visible-md row">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Makers</a></li>
-          <li class="active">Data</li>
+          <li>
+            <a class="_button home" href="#">
+              <i class="icon-home"></i>
+            </a>
+          </li>
+          <li>
+            <span class="_button active">
+              <span>
+                Новини
+              </span>
+            </span>
+          </li>
         </ol>
       </div> 
       <h1 class="col-sm-4 h2_style center">
-        новини
+        Новини
       </h1>
       <div class="col-sm-4">
         <div class="page_nav">
-          1-2-3
+          <i class="icon-left-arrow"></i>
+          <span class="current">1</span>
+          /
+          <span class="max">5</span>
+          <i class="icon-right-arrow"></i>
         </div>
       </div>
-    </div>
+    </div>   
   </div>
 
   <!-- types -->
@@ -317,19 +330,23 @@
         </footer>
       </div>
     </div>
-  </div>
-  
-  <!-- this page_nav is visible on mobile -->
-  <div class="container visible-xs visible-sm">
-    <div class="row">
+    
+    <!-- this page_nav is visible on mobile -->
+    <div class="row visible-xs">
       <div class="page_nav">
-        1-2-3
-      </div>    
+        <i class="icon-left-arrow"></i>
+        <span class="current">1</span>
+        /
+        <span class="max">5</span>
+        <i class="icon-right-arrow"></i>
+      </div>
     </div>
   </div>
   
+  
+  
   <!-- full -->
-  <div class="container-fluid mainpage_full mainpage_about">
+  <div class="container-fluid mainpage_full news_fullwidth">
     <div class="fake row">
       <div class="container center">
         <div class="row">

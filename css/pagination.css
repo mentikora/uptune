@@ -1,22 +1,62 @@
 /*=== TOP PAGE NAVIGATION ===*/
+.page_top_navigation{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
 
 /* page_nav */
 .page_nav{
 	float: right;
 	width: 140px;
-	text-align: center;
+	text-align: right;
+	line-height: 32px;
 }
 	@media(max-width: 768px){
 		.page_nav{
 			float: none;
-			margin: 0 auto;
+			margin: 15px auto 0;
 		}
 	}
+	.page_nav i{
+		position: relative;
+		top: 4px;
+		left: 0;
+
+		cursor: pointer;
+		color: #0c0c0c;
+		font-size: 20px;
+
+		-webkit-transition: color .25s ease-in-out;
+		-moz-transition: color .25s ease-in-out;
+		-ms-transition: color .25s ease-in-out;
+		-o-transition: color .25s ease-in-out;
+		transition: color .25s ease-in-out;
+	}
+		.page_nav i:hover{
+			color: #009ad3;
+		}
+	.page_nav .current,
+	.page_nav .max{
+		display: inline-block;
+		width: 40px;
+		height: 32px;
+
+		text-align: center;
+		font-size: 14px;
+		color: #3f3f3f;
+	}
+		.page_nav .current{
+			background: url(images/page_current.jpg) no-repeat 0 0;
+		}
+		.page_nav .max{
+			background: url(images/page_max.jpg) no-repeat 0 0;
+		}
 
 /* breadcrumbs */
 /* "button" styles in - button.css */
 .breadcrumb{
 	padding: 0 0 0 15px;
+	margin-bottom: 0;
 }
 	.breadcrumb .hove{}
 	.breadcrumb .active{}
@@ -28,5 +68,30 @@
 	.breadcrumb li:before,
 	.breadcrumb li:after{
 		display: none;
+	}
+
+/* news item page */
+.page_top_navigation .date{
+	float: right;
+	line-height: 32px;
+
+	font-size: 12px;
+  font-weight: 700;
+  color: #333333;
+}
+	@media(max-width: 768px){
+		.page_top_navigation .date{
+			float: none;
+			text-align: center;
+			margin-top: 15px;
+		}
+	}
+	.page_top_navigation .date i{
+		font-size: 20px;
+		position: relative;
+		top: 4px;
+		left: 0;
+		color: #009ad3;
+    margin-right: 10px;
 	}
 

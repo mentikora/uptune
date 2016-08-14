@@ -5,6 +5,11 @@
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
+	@media(max-width: 768px){
+		._news_item:first-child{
+			margin-top: 0;
+		}
+	}
 	._news_item header{ margin-bottom: 15px; }
 	._news_item header a{
 		font-size: 18px;
