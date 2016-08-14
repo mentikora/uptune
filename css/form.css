@@ -20,6 +20,18 @@ label{
 		color: #159ad4;
 	}
 
+.fields_required_text{
+	font-size: 10px;
+	color: #3f3f3f;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	font-weight: 600;
+}
+	.fields_required_text span{
+		color: #159ad4;
+		font-size: 14px;
+	}
+
 select{
 	appearance:none;
   -moz-appearance:none; 

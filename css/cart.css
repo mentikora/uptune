@@ -17,9 +17,12 @@
 	right: -12px;
 }
 
+.modal .cart_header{
+	margin-top: 40px;
+}
 .cart_header{
 	padding-bottom: 5px;
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 
 	font-size: 18px;
 	color: #3f3f3f;
