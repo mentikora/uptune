@@ -32,6 +32,10 @@
 		-o-transition: color .25s ease-in-out;
 		transition: color .25s ease-in-out;
 	}
+		.page_nav a:hover,
+		.page_nav a:focus{
+			text-decoration: none;
+		}
 		.page_nav i:hover{
 			color: #009ad3;
 		}
