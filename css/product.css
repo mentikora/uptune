@@ -147,6 +147,8 @@
 	._product_item.reduced .name{
 		margin-bottom: 10px;
 		font-size: 16px;
+		height: 40px;
+		overflow: hidden;
 	}
 
 /* makers title n pruducts.html */
