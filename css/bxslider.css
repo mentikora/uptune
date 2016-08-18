@@ -88,6 +88,27 @@
     height: 100%;
     width: 100%;
 	}
+	@media(max-width: 991px){
+		.bx-prev,
+		.bx-next{
+			top: 0 !important;
+			width: 30px;
+			height: 100% !important;
+			line-height: 485px;
+		}
+		.bx-prev{
+			left: 0 !important;
+		}
+			.bx-prev i{
+				transform: rotate(-180deg) !important;
+			}
+		.bx-next{
+			right: 0 !important;
+		}
+			.bx-next i{
+				transform: rotate(0deg) !important;
+			}
+	}
 
 /** THEME
 ===================================*/
