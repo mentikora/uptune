@@ -35,7 +35,7 @@
 		border-style: solid;
 		border-color: #007bff transparent transparent transparent;
 	}
-	._button:hover
+	._button:hover,
 	._button:focus{
 		text-decoration: none;
 	}

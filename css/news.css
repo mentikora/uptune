@@ -76,4 +76,9 @@
 		-webkit-transition: all .25s ease-in-out;
 		transition: all .25s ease-in-out;
 	}
+
+/* news page */
+.news_page ._news_item{
+	margin-bottom: 0;
+}
 		
