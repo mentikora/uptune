@@ -120,7 +120,6 @@
 		}
 		
 	@media(max-width: 768px){
-		#footer .top,
 		#footer .mid{
 			margin-bottom: 25px;
 		}
@@ -142,5 +141,11 @@
 		*/
 		margin-left: 12.5%;
 		margin-right: 12.5%;
+	}
+}
+@media(max-width: 768px){
+	.footer_fake_margin{
+		margin-top: 35px;
+		margin-bottom: 35px;
 	}
 }
