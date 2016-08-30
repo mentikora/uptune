@@ -1,213 +1,218 @@
 /*=== BUTTONS ===*/
 ._button{
-	text-align: center;
-	position: relative;
-	display: inline-block;
-	cursor: pointer;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 
-	background-color: #007bff;
+  background-color: #007bff;
 }
-	._button,
-	._button:before,
-	._button:after{
-		-webkit-transition: all .25s ease-in-out;
-		transition: all .25s ease-in-out;
-	}
-	._button:before{
-		content: '';
-		position: absolute;
-		display: block;
-		top: 0;
-		left: -10px;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-color: transparent transparent #007bff transparent;
-	}
-	._button:after{
-		content: '';
-		position: absolute;
-		display: block;
-		top: 0;
-		right: -10px;
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-color: #007bff transparent transparent transparent;
-	}
-	._button:hover,
-	._button:focus{
-		text-decoration: none;
-	}
-	/* TYPEOF button */
+  ._button,
+  ._button:before,
+  ._button:after{
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+  }
+  ._button:before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent transparent #007bff transparent;
+  }
+  ._button:after{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #007bff transparent transparent transparent;
+  }
+  ._button:hover,
+  ._button:focus{
+    text-decoration: none;
+  }
+  /* TYPEOF button */
 
-	/* button text */
-	._button.text{
-		height: 50px;
-		line-height: 50px;
-		padding: 0 25px;
-		
-		font-size: 17px;
-		text-transform: uppercase;
-		font-weight: 600;
-		color: #0c0c0c;
-	}
-		._button.text:before{
-			border-width: 0 0 50px 10px;
-		}
-		._button.text:after{
-			border-width: 50px 10px 0 0;
-		}
-		._button.text:hover{
-			color: #009ad3;
-			background-color: #0c0c0c;
-		}
-		._button.text:hover:before{
-			border-color: transparent transparent #0c0c0c transparent;
-		}
-		._button.text:hover:after{
-			border-color: #0c0c0c transparent transparent transparent;
-		}
+  /* button text */
+  ._button.text{
+    height: 50px;
+    line-height: 50px;
+    padding: 0 25px;
+    
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #0c0c0c;
+  }
+    ._button.text:before{
+      border-width: 0 0 50px 10px;
+    }
+    ._button.text:after{
+      border-width: 50px 10px 0 0;
+    }
+    ._button.text:hover{
+      color: #009ad3;
+      background-color: #0c0c0c;
+    }
+    ._button.text:hover:before{
+      border-color: transparent transparent #0c0c0c transparent;
+    }
+    ._button.text:hover:after{
+      border-color: #0c0c0c transparent transparent transparent;
+    }
 
-	/* button cart*/
-	._button.cart{
-		height: 45px;
-		line-height: 55px;
-		padding: 0 7px;
+  /* button cart*/
+  ._button.cart{
+    height: 45px;
+    line-height: 55px;
+    padding: 0 7px;
 
-		color: #fff;
-	}
-		._button.cart:before{
-			border-width: 0 0 45px 10px;
-		}
-		._button.cart:after{
-			border-width: 45px 10px 0 0;
-		}
-		._button.cart i{
-			font-size: 22px;
-		}
-		._button.cart:hover{
-			color: #0c0c0c;
-		}
+    color: #fff;
+  }
+    ._button.cart:before{
+      border-width: 0 0 45px 10px;
+    }
+    ._button.cart:after{
+      border-width: 45px 10px 0 0;
+    }
+    ._button.cart i{
+      font-size: 22px;
+    }
+    ._button.cart:hover{
+      color: #0c0c0c;
+    }
 
-	/* button close*/
-	._button.exit{
-		height: 32px;
-		line-height: 32px;
-		padding: 0 4px;
+  /* button close*/
+  ._button.exit{
+    height: 32px;
+    line-height: 32px;
+    padding: 0 4px;
 
-		color: #fff;
-	}
-		._button.exit:before{
-			border-width: 0 0 32px 10px;
-		}
-		._button.exit:after{
-			border-width: 32px 10px 0 0;
-		}
-		._button.exit i{
-			position: relative;
-			top: 2px;
-			left: 0;
-			font-size: 16px;
-		}
-		._button.exit:hover{
-			color: #0c0c0c;
-		}
+    color: #fff;
+  }
+    ._button.exit:before{
+      border-width: 0 0 32px 10px;
+    }
+    ._button.exit:after{
+      border-width: 32px 10px 0 0;
+    }
+    ._button.exit i{
+      position: relative;
+      top: 2px;
+      left: 0;
+      font-size: 16px;
+    }
+    ._button.exit:hover{
+      color: #0c0c0c;
+    }
 
-	/* button with input*/
-	._button.withInput{
-		padding: 0;
-		width: calc(100% - 20px);
-		margin: 0 auto;
-		display: block;
-		color: #fff;
-	}
-	._button.withInput input{
-		width: 100%;
-		border: 0;
-		outline: 0;
-		background: inherit;
-		color: inherit;
-		padding: 0 25px;
-	}
+  /* button with input*/
+  ._button.withInput{
+    padding: 0;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+  }
+  ._button.withInput input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: inherit;
+    color: inherit;
+    padding: 0 25px;
+  }
+    @media(max-width: 768px){
+      ._button.withInput input{
+        padding: 0;
+      }
+    }
 
-	/* button breadcrumbs */
-	.breadcrumb ._button{
-		padding: 0 12px;
+  /* button breadcrumbs */
+  .breadcrumb ._button{
+    padding: 0 12px;
 
-		height: 32px;
-		line-height: 32px;
-		font-size: 12px;
-		color: #3f3f3f;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    color: #3f3f3f;
 
-		background-color: #f3f3f3;
-	}
-		.breadcrumb ._button:before{
-			border-width: 0 0 32px 10px;
-		}
-		.breadcrumb ._button:after{
-			border-width: 32px 10px 0 0;
-		}
-		.breadcrumb ._button.home:before{
-			display: none;
-		}
-		.breadcrumb ._button:after{
-			border-color: #f3f3f3 transparent transparent transparent;
-		}
-		.breadcrumb ._button:before{
-			border-color: transparent transparent #f3f3f3 transparent;
-		}
+    background-color: #f3f3f3;
+  }
+    .breadcrumb ._button:before{
+      border-width: 0 0 32px 10px;
+    }
+    .breadcrumb ._button:after{
+      border-width: 32px 10px 0 0;
+    }
+    .breadcrumb ._button.home:before{
+      display: none;
+    }
+    .breadcrumb ._button:after{
+      border-color: #f3f3f3 transparent transparent transparent;
+    }
+    .breadcrumb ._button:before{
+      border-color: transparent transparent #f3f3f3 transparent;
+    }
 
-	.breadcrumb ._button.active{
-		background: #007bff;
-		cursor: default;
-	}
-		.breadcrumb ._button.active span{
-			max-width: 130px;
-			white-space: nowrap;
-	    text-overflow: ellipsis;
-	    color: #fff;
-	    overflow: hidden;
-	    display: inline-block;
-	    height: 32px;
-	    text-align: left;
-		}
-		.breadcrumb ._button.active:after{
-				border-color:  #007bff transparent transparent transparent;
-		}
-		.breadcrumb ._button.active:before{
-			border-color:  transparent transparent #007bff transparent;
-		}
+  .breadcrumb ._button.active{
+    background: #007bff;
+    cursor: default;
+  }
+    .breadcrumb ._button.active span{
+      max-width: 130px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      color: #fff;
+      overflow: hidden;
+      display: inline-block;
+      height: 32px;
+      text-align: left;
+    }
+    .breadcrumb ._button.active:after{
+        border-color:  #007bff transparent transparent transparent;
+    }
+    .breadcrumb ._button.active:before{
+      border-color:  transparent transparent #007bff transparent;
+    }
 
-	/* maker site button*/
-	._button.maker_url{
-		float: right;
-		padding: 0 15px;
-		height: 32px;
-		line-height: 32px;
+  /* maker site button*/
+  ._button.maker_url{
+    float: right;
+    padding: 0 15px;
+    height: 32px;
+    line-height: 32px;
 
-		font-weight: 600;
-		font-size: 12px;
-		color: #fff;
-	}
-		._button.maker_url:after{
-			display: none;
-			border-width: 32px 10px 0 0;
-			border-color:  #007bff transparent transparent transparent;
-		}
-		._button.maker_url:before{
-			border-width: 0 0 32px 10px;
-			border-color:  transparent transparent #007bff transparent;
-		}
-		@media(max-width: 768px){
-			.maker_wrapper{
-				text-align: center;
-			}
-			._button.maker_url{
-				float: none;
-				margin-top: 15px;
-			}
-			._button.maker_url:after{
-				display: block;
-			}
-		}
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+  }
+    ._button.maker_url:after{
+      display: none;
+      border-width: 32px 10px 0 0;
+      border-color:  #007bff transparent transparent transparent;
+    }
+    ._button.maker_url:before{
+      border-width: 0 0 32px 10px;
+      border-color:  transparent transparent #007bff transparent;
+    }
+    @media(max-width: 768px){
+      .maker_wrapper{
+        text-align: center;
+      }
+      ._button.maker_url{
+        float: none;
+        margin-top: 15px;
+      }
+      ._button.maker_url:after{
+        display: block;
+      }
+    }
