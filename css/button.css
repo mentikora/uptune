@@ -5,7 +5,7 @@
   display: inline-block;
   cursor: pointer;
 
-  background-color: #007bff;
+  background-color: #159ad4;
 }
   ._button,
   ._button:before,
@@ -22,7 +22,7 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-color: transparent transparent #007bff transparent;
+    border-color: transparent transparent #159ad4 transparent;
   }
   ._button:after{
     content: '';
@@ -33,7 +33,7 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-color: #007bff transparent transparent transparent;
+    border-color: #159ad4 transparent transparent transparent;
   }
   ._button:hover,
   ._button:focus{
@@ -147,6 +147,10 @@
 
     background-color: #f3f3f3;
   }
+    .breadcrumb ._button:not(.active):hover{
+      text-decoration: none;
+      color: #159ad4;
+    }
     .breadcrumb ._button:before{
       border-width: 0 0 32px 10px;
     }
@@ -164,7 +168,7 @@
     }
 
   .breadcrumb ._button.active{
-    background: #007bff;
+    background: #159ad4;
     cursor: default;
   }
     .breadcrumb ._button.active span{
@@ -178,10 +182,10 @@
       text-align: left;
     }
     .breadcrumb ._button.active:after{
-        border-color:  #007bff transparent transparent transparent;
+        border-color:  #159ad4 transparent transparent transparent;
     }
     .breadcrumb ._button.active:before{
-      border-color:  transparent transparent #007bff transparent;
+      border-color:  transparent transparent #159ad4 transparent;
     }
 
   /* maker site button*/
@@ -198,11 +202,11 @@
     ._button.maker_url:after{
       display: none;
       border-width: 32px 10px 0 0;
-      border-color:  #007bff transparent transparent transparent;
+      border-color:  #159ad4 transparent transparent transparent;
     }
     ._button.maker_url:before{
       border-width: 0 0 32px 10px;
-      border-color:  transparent transparent #007bff transparent;
+      border-color:  transparent transparent #159ad4 transparent;
     }
     @media(max-width: 768px){
       .maker_wrapper{
