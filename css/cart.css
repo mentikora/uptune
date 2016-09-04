@@ -16,6 +16,11 @@
 	top: -15px;
 	right: -12px;
 }
+	@media(max-width: 991px){
+		.cart_wrapper ._button.exit{
+			right: 0;
+		}
+	}
 
 .modal .cart_header{
 	margin-top: 40px;
@@ -214,6 +219,11 @@
 	line-height: 48px;
 	color: #009ad3;
 }
+	@media(max-width: 767px){
+		.empty_state{
+			margin: 30px 0 50px 0;
+		}
+	}
 	.empty_state i {
 		position: relative;
 		top: 18px;
